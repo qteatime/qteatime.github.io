@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>{{ page.title }} - Niini's Cutie Time</title>
+    <meta name="viewport" content="width=device-width" />
+
+    <meta
+      name="description"
+      content="Hexes of a dream-eating witch playing too much with computers."
+    />
+
+    {% if page.is_article %} {% if page.card_type %}
+    <meta property="og:type" content="{{ page.card_type }}" />
+    <meta property="twitter:card" content="{{ page.card_type }}" />
+    {% endif %}
+    <meta property="og:title" content="{{ page.title }}" />
+    {% if page.snip %}
+    <meta property="og:description" content="{{ page.snip }}" />
+    {% endif %} {% if page.card_description %}
+    <meta property="og:description" content="{{ page.card_description }}" />
+    {% endif %} {% if page.card_image %}
+    <meta
+      property="og:image"
+      content="{{ site.base_url }}{{ page.card_image }}"
+    />
+    {% endif %} {% endif %}
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic|PT+Sans+Caption:700,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/media/fonts/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/media/css/bulma.min.css" />
+    <link rel="stylesheet" href="/media/css/site.css" />
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>

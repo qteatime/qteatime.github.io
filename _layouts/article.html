@@ -1,0 +1,16 @@
+---
+layout: page
+---
+
+<article id="main-article" class="q-article q-diary-post">
+  <div class="q-article-heading">
+    <div class="q-article-meta">
+      {{ page.date | date_to_long_string }} &bullet; {{ content |
+      number_of_words }} words
+    </div>
+    <h2 class="q-article-title">{{ page.title }}</h2>
+    <p class="q-article-snip">{{ page.snip }}</p>
+  </div>
+
+  <div class="q-article-content q-content q-diary-content">{{ content }}</div>
+</article>

@@ -1,0 +1,16 @@
+<nav class="q-navigation">
+  <div class="container">
+    <div id="main-navigation">
+      {% for link in site.navigation %} 
+        {% assign current = nil %} 
+        {% if page.group == link.group %}
+          {% assign current = 'is-active' %} 
+        {% endif %}
+
+        <a class="navbar-item {{ current }}" href="{{ link.url }}">{{
+          link.title
+        }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>

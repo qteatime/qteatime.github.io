@@ -1,0 +1,26 @@
+- title: "Games"
+  works:
+    - thumbnail: /media/works/2022-sound-of-rain.png
+      kind: interactive fiction
+      title: the sound of rain.
+      target: _blank
+      snip: |
+        A short exploration on the meaning of death.
+      url: https://qteatime.itch.io/the-sound-of-rain-remake
+
+- title: "Tools"
+  works:
+    - thumbnail: /media/works/crochet.png
+      kind: programming language
+      title: Crochet
+      target: _blank
+      snip: |
+        A programming system for building games safely.
+      url: https://crochet.qteati.me/
+    - thumbnail: /media/works/kate.png
+      kind: fantasy console
+      title: Kate
+      target: _blank
+      snip: |
+        A 2010's era handheld console that runs in your browser.
+      url: https://github.com/qteatime/kate

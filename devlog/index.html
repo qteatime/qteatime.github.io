@@ -1,0 +1,48 @@
+---
+layout: page
+title: Devlog
+group: devlog
+---
+
+<!-- prettier-ignore -->
+<div class="q-diary-list q-article">
+  <div class="q-diary-list-posts">
+    {% for post in paginator.posts %}
+    <div class="q-diary-post-summary">
+      <header class="page-heading">
+        <h2 class="q-article-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p class="q-article-meta">
+          Published {{ post.date | date_to_long_string }} &bullet; {{ post.content | number_of_words }} words
+        </p>
+      </header>
+      <div class="q-article-content q-content q-diary-content">
+        {{ post.excerpt }}
+      </div>
+      {% if post.content.size > post.excerpt.size %}
+      <div class="q-read-more">
+        <a class="q-button q-read-more-button" href="{{ post.url }}">Read more</a>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+    <div class="q-pagination">
+      {% if paginator.previous_page %}
+        <a class="q-button q-page-left-button" href="{{ paginator.previous_page_path | relative_url }}">&laquo; More recent</a>
+      {% else %}
+        <span></span>
+      {% endif %}
+
+      {% if paginator.next_page %}
+        <a class="q-button q-page-right-button" href="{{ paginator.next_page_path | relative_url }}">Older &raquo;</a>
+      {% else %}
+        <span></span>
+      {% endif %}
+    </div>
+    {% endif %}
+
+  </div>
+</div>

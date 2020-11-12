@@ -1,0 +1,37 @@
+title: "Niini's Cutie Time"
+highlighter: rouge
+markdown: kramdown
+base_url: https://qteati.me
+exclude:
+  - vendor
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-paginate
+
+paginate: 3
+paginate_path: "/devlog/page:num/"
+excerpt_separator: <!--more-->
+
+navigation:
+  - title: Home
+    url: /
+    group: home
+  - title: Works
+    url: /works/
+    group: works
+  - title: Devlog
+    url: /devlog/
+    group: devlog
+  - title: About
+    url: /about/
+    group: about
+
+defaults:
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      group: devlog
+      is_article: true
+      permalink: /devlog/:year/:month/:title/

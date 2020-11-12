@@ -1,0 +1,18 @@
+title: "Q.teatime"
+highlighter: rouge
+markdown: kramdown
+base_url: https://qteati.me
+exclude:
+  - vendor
+  
+plugins:
+  - jekyll-redirect-from
+  - jekyll-paginate
+
+navigation:
+  - title: Home
+    url: /
+    group: home
+  - title: About
+    url: /about/
+    group: about

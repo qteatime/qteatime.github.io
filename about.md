@@ -5,9 +5,9 @@ permalink: /about/
 group: about
 ---
 
-<h1 class="q-article-title" style="margin-left: 150px">Hi, I’m Q.</h1>
+<h1 class="q-article-title">Hi, I’m Q.</h1>
 
-<img src="/media/image/q.png" style="float: left">
+<img src="/media/image/q.png" style="float: right" alt="A witch and a floating cat-shaped bag. The witch has white skin, pink hair (gathered on the left side by an eye-shaped hair elastic), and green eyes. The witch wears a knee-length green dress (with leaves and flower patterns) under a white winter coat and a green cape. Warm purple-brown tights and winter boots complete the look. There's a wooden talisman attached to a necklace hanging from the witch's neck. The cat-shaped bag is beige, with pink scrapes sewn in a few places.">
 
 4th May ● ↑25 years  
 Ace & Agender Witch
@@ -15,7 +15,7 @@ Ace & Agender Witch
 **Height:** 153cm  
 **Weight:** 49kg
 
-**Likes:** Rhythm games, collecting cute plushies, sweets, cats, and nature.
+**Likes:** Rhythm games, collecting plushies, sweets, cats, and nature.
 
 **Dislikes:** Meat, and noisy or crowded places.
 

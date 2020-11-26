@@ -60,6 +60,11 @@ body {
   border-bottom: 8px solid #fcfcfc;
 }
 
+.q-navigation #main-navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .q-navigation .navbar-item {
   font-size: 1.3em;
   font-family: "PT Sans Caption", sans;
@@ -235,15 +240,6 @@ ruby.ipa rt::after {
 @media screen and (max-width: 720px) {
   .q-front-page .q-front-description br {
     display: none;
-  }
-
-  .q-navigation {
-    text-align: center;
-  }
-
-  .q-navigation .navbar-item.is-active,
-  .q-navigation .navbar-item:hover {
-    border-color: transparent;
   }
 
   .q-article {

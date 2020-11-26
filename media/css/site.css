@@ -231,3 +231,36 @@ ruby.ipa rt::after {
 .q-skip-small {
   margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 720px) {
+  .q-front-page .q-front-description br {
+    display: none;
+  }
+
+  .q-navigation {
+    text-align: center;
+  }
+
+  .q-navigation .navbar-item.is-active,
+  .q-navigation .navbar-item:hover {
+    border-color: transparent;
+  }
+
+  .q-article {
+    padding: 3em 2em;
+  }
+
+  .q-footer .q-footer-container {
+    flex-direction: column-reverse;
+  }
+
+  .q-footer .q-footer-attribution {
+    margin-top: 2.5em;
+  }
+
+  .q-footer .q-footer-navigation a {
+    display: block;
+    text-align: center;
+    margin: 1em 0 0.5em;
+  }
+}
